@@ -1,0 +1,79 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+html {
+  /*用于rem适应各种屏幕*/
+  font-size: 12px;
+}
+body {
+  color: #333;
+  width: 100%;
+  font-family: "Helvetica";
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul > li {
+  list-style-type: none;
+}
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+}
+textarea,
+a,
+input {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

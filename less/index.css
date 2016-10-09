@@ -1,0 +1,13 @@
+@charset "utf-8";
+header .head-top-nav {
+  height: 30px;
+  padding: 10px 0px;
+}
+header .head-top-nav .logo {
+  width: 100%;
+}
+header .head-top-nav .logo img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+}

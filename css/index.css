@@ -1,0 +1,364 @@
+@charset "utf-8";
+body {
+  background-color: #fff;
+}
+/*header头部开始*/
+header .head-top-nav {
+  height: 50px;
+  padding: 10px 0px;
+  position: relative;
+}
+header .head-top-nav .logo {
+  width: 100%;
+}
+header .head-top-nav .logo img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+}
+header .head-top-nav .login_reg {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+header .head-top-nav .login_reg .down-app {
+  font-family: arial, "Microsoft YaHei";
+  padding: 5px;
+  font-size: 1.4rem;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 18px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #df2816;
+}
+header #swiper-container1 {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+header #swiper-container1 img {
+  width: 100%;
+  height: 180px;
+}
+header #swiper-container1 .pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+header #swiper-container1 .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: #555;
+  margin: 0 5px;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+header #swiper-container1 .swiper-pagination-bullet {
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+}
+header #swiper-container1 .swiper-active-switch {
+  background: #fff;
+}
+/*产品列表开始*/
+.product-list #swiper-container2 {
+  position: relative;
+  width: 100%;
+  height: 168px;
+  overflow: hidden;
+}
+.product-list #swiper-container2 .pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.product-list #swiper-container2 .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: #C7B8B8;
+  margin: 0 5px;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.product-list #swiper-container2 .swiper-pagination-bullet {
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+}
+.product-list #swiper-container2 .swiper-active-switch {
+  background: red;
+}
+.product-list #swiper-container2 .swiper-slide a {
+  padding-top: 10px;
+  display: block;
+  float: left;
+  width: 25%;
+  height: 84px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.product-list #swiper-container2 .swiper-slide a i {
+  margin: 0 auto;
+  width: 45.5px;
+  height: 45.5px;
+  display: block;
+  background: url(../images/index_new.png) no-repeat;
+  background-size: 320px auto;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav1 {
+  background-position: -5px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav2 {
+  background-position: -53px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav3 {
+  background-position: -101px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav4 {
+  background-position: -149px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav5 {
+  background-position: -197px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav6 {
+  background-position: -245px -5px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav7 {
+  background-position: -5px -53px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav8 {
+  background-position: -52.5px -52px;
+}
+.product-list #swiper-container2 .swiper-slide a i.wap-nav10 {
+  background-position: -248px -233px;
+}
+.product-list .product-msg {
+  height: 26px;
+  border-top: 1px solid #d8d7dc;
+  border-bottom: 1px solid #d8d7dc;
+  padding-top: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.product-list .product-msg i {
+  width: 18px;
+  height: 15px;
+  display: inline-block;
+  background: url(../images/index_new.png) no-repeat;
+  background-size: 320px auto;
+  background-position: -288px -5px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.product-list .product-msg .msg {
+  color: #646464;
+}
+.product-list .product-msg #msg-wrap {
+  position: absolute;
+  left: 120px;
+  top: 5px;
+  overflow: hidden;
+  height: 24px;
+}
+.product-list .product-msg #msg-wrap ul {
+  height: 24px;
+}
+.product-list .product-msg #msg-wrap ul li {
+  height: 24px;
+}
+.product-list .product-msg #msg-wrap ul li a {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+/*热销开始*/
+.hot-product {
+  padding-bottom: 80px;
+}
+.hot-product .pro-tit {
+  background-color: #f5f5f5;
+  padding: 7px 0;
+  border-bottom: 1px solid #d8d7dc;
+}
+.hot-product .hot-item {
+  position: relative;
+}
+.hot-product .hot-item .hot-content {
+  padding: 0 10px 20px;
+}
+.hot-product .hot-item .hot-content h3 {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 62px;
+  margin-right: 5px;
+  font-size: 1.8rem;
+  color: #333;
+}
+.hot-product .hot-item .hot-content h3 i {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 60px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #fff;
+  background-color: #FF6860;
+}
+.hot-product .hot-item .hot-content .pos_level {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 37px;
+  height: 27px;
+  background: url(../images/index_new.png) no-repeat;
+  background-size: 320px auto;
+  background-position: -89px -101px;
+}
+.hot-product .hot-item .hot-content .info {
+  padding: 18px 0px;
+  font-size: 1.6rem;
+  float: left;
+  width: 75%;
+}
+.hot-product .hot-item .hot-content .info span {
+  display: inline-block;
+  width: 32%;
+}
+.hot-product .hot-item .hot-content .info_r {
+  width: 25%;
+  float: right;
+  padding-top: 5px;
+}
+.hot-product .hot-item .hot-content .info_r a {
+  display: block;
+  text-align: center;
+}
+.hot-product .hot-item .hot-content .info_r .login {
+  color: #ff6262;
+}
+.hot-product .hot-item .hot-content .info_r .rate {
+  color: #9f9f9f;
+}
+.hot-product .hot-item .hot-content .wap-ct-jdtf {
+  border-radius: 12px;
+  background: #cccccc;
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+.hot-product .hot-item .hot-content .wap-ct-jdtf .wap-ct-jdt {
+  border-radius: 12px;
+  height: 10px;
+  line-height: 10px;
+  background: #4dbaff;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  width: 0%;
+  color: #ffffff;
+  text-align: right;
+}
+.hot-product .hot-item .stat-total {
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 20px 12px 20px;
+  text-align: right;
+}
+.hot-product .hot-item .stat-total i {
+  display: inline-block;
+  background: url(../images/index_new.png) no-repeat;
+  background-size: 320px;
+  vertical-align: middle;
+  width: 14px;
+  height: 15px;
+  margin-right: 5px;
+}
+.hot-product .hot-item .stat-total .view i {
+  background-position: -216px -58px;
+  width: 17px;
+}
+.hot-product .hot-item .stat-total .collect i {
+  background-position: -180px -58px;
+}
+/*页脚开始*/
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #fafbfe;
+}
+footer .wap-ft-frame {
+  padding: 10px 0;
+}
+footer .wap-ft-frame .active {
+  color: #ee4634;
+}
+footer .wap-ft-frame > a {
+  font-family: arial, "Microsoft YaHei";
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #808080;
+}
+footer .wap-ft-frame > a .icon_home,
+footer .wap-ft-frame > a .icon_list,
+footer .wap-ft-frame > a .icon_my {
+  background-image: url(../images/nav_icon.png?v=20160107);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: auto 171px;
+  display: block;
+  margin: 4px auto 2px;
+}
+footer .wap-ft-frame > a .icon_list {
+  background-position: 0px -91px;
+}
+footer .wap-ft-frame > a .icon_my {
+  background-position: 0px -149px;
+}

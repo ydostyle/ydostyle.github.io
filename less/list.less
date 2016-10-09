@@ -1,0 +1,411 @@
+@charset "utf-8";
+@import "commonFn.less";
+
+html, body {
+    font-family: "Helvetica";
+    background-color: #efeff4;
+    height: 100%;
+}
+
+header {
+    //border-bottom:1px solid #e1e1e1;
+    background-color: #f8f8f8;
+    .top-title {
+        position: relative;
+        border-bottom: 1px solid #e1e1e1;
+        height: 47px;
+        > .product_tit {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            > h1 {
+                font-size: 1.4rem;
+                font-weight: normal;
+                padding: 5px 0;
+            }
+            > p {
+                letter-spacing: 1px;
+                padding: 4px 0;
+                color: #666;
+                font-size: 1.2rem;
+            }
+        }
+        > .back {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            background: url(../images/index_new.png) no-repeat;
+            background-size: 320px auto;
+            background-position: -293px -27px;
+            width: 10px;
+            height: 16px;
+        }
+        > .search {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            background: url(../images/index_new.png) no-repeat;
+            background-size: 320px auto;
+            background-position: -140px -77px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    #pro_wrapper {
+        overflow: hidden;
+        #scroller1 {
+            width: 200%;
+            > ul {
+                overflow: hidden;
+                border-bottom: 1px solid #ccc;
+                > li {
+                    float: left;
+                    width: 11%;
+                    text-align: center;
+                    padding: 0 10px;
+                    > a {
+                        display: block;
+                        padding: 10px 0;
+                        color: #666;
+                    }
+                    > .active {
+                        color: #ff662f;
+                        padding-bottom: 9px;
+                        border-bottom: 2px solid #ff662f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*所有产品列表*/
+.list_device {
+    height: 300px;
+    width: 100%;
+    position:relative;
+    z-index:100;
+    .swiper-container {
+        height: 100%;
+    }
+    .swiper-scrollbar {
+
+        background: none;
+
+        position: absolute;
+
+        right: 3px;
+
+        top: 0;
+
+        height: 100%;
+
+        width: 5px;
+
+    }
+    .swiper-scrollbar .swiper-scrollbar-drag {
+
+        background: rgba(0, 0, 0, 0.3);
+
+    }
+    .hot-product {
+        background-color: #efeff4;
+        margin-top: 10px;
+
+        width: 100%;
+        overflow: hidden;
+        .pro-tit {
+            background-color: #f5f5f5;
+            padding: 7px 0;
+            border-bottom: 1px solid #d8d7dc;
+        }
+        .hot-item {
+            position: relative;
+            margin-bottom: 10px;
+            background-color: #fff;
+            .hot-content {
+                padding: 0 10px 20px;
+                h3 {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        left: 0px;
+                        top: 10px;
+                        width: 60px;
+                        height: 20px;
+                        .border_r(4px);
+                        line-height: 20px;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        color: #fff;
+                        background-color: #FF6860;
+                    }
+                    padding-top: 10px;
+                    padding-left: 62px;
+                    margin-right: 5px;
+                    font-size: 1.8rem;
+                    color: #333;
+                }
+                .pos_level {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    width: 37px;
+                    height: 27px;
+                    background: url(../images/index_new.png) no-repeat;
+                    background-size: 320px auto;
+                    background-position: -89px -101px;
+                }
+                .info {
+                    padding: 18px 0px;
+                    font-size: 1.6rem;
+                    float: left;
+                    width: 75%;
+                    span {
+                        display: inline-block;
+                        width: 32%;
+                    }
+                }
+                .info_r {
+                    width: 25%;
+                    float: right;
+                    padding-top: 5px;
+                    a {
+                        display: block;
+                        text-align: center;
+                    }
+                    .login {
+                        color: #ff6262;
+                    }
+                    .rate {
+                        color: #9f9f9f;
+                    }
+                }
+
+                .wap-ct-jdtf {
+                    border-radius: 12px;
+                    background: #cccccc;
+                    position: relative;
+                    width: 100%;
+                    height: 10px;
+                    .wap-ct-jdt {
+                        border-radius: 12px;
+                        height: 10px;
+                        line-height: 10px;
+                        background: #4dbaff;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        font-size: 12px;
+                        width: 0%;
+                        color: #ffffff;
+                        text-align: right;
+                    }
+                }
+            }
+            .stat-total {
+                border-top: solid 1px #ddd;
+                border-bottom: solid 1px #ddd;
+                padding: 10px 20px 12px 20px;
+                text-align: right;
+                i {
+                    display: inline-block;
+                    background: url(../images/index_new.png) no-repeat;
+                    background-size: 320px;
+                    vertical-align: middle;
+                    width: 14px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                .view i {
+                    background-position: -216px -58px;
+                    width: 17px;
+                }
+                .collect i {
+                    background-position: -180px -58px;
+                }
+            }
+        }
+    }
+}
+
+/*更多*/
+.more {
+    padding: 10px 20px 57px;
+    h2 {
+        background-color: #fff;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #999;
+        border: solid 1px #bcbcbc;
+    }
+}
+
+/*页脚排序*/
+footer {
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+
+    border-top: 1px solid #ccc;
+    .sort {
+        background-color: #fff;
+        text-align: center;
+        > a {
+            font-size: 1.8rem;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: #f04f4b;
+            font-weight: bold;
+            .drop {
+                display: inline-block;
+                width: 13px;
+                height: 10px;
+                background: url(../images/index_new.png) no-repeat -164px -76px;
+                background-size: 320px;
+                vertical-align: middle;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+#sort_info {
+    position: fixed;
+    z-index: 300;
+    bottom: 56px;
+    left: 0px;
+    width: 100%;
+    display:block;
+}
+
+.sort_con {
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    li {
+        padding: 6px 0;
+    }
+    a {
+        font-size: 1.6rem;
+
+    }
+}
+
+#sort_info::after {
+    display: block;
+    content: '\20';
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 99999;
+    background: url(../images/sx-nav-select.png) no-repeat 0 0;
+    background-size: 17px auto;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 99999;
+    top: 200px;
+
+    left: 0;
+    width: 100%;
+    background: #ccc;
+    height: 300px;
+    overflow: hidden;
+    #scroller {
+        position: absolute;
+        z-index: 1;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        -o-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    #scroller ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    #scroller li {
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #fff;
+        background-color: #fafafa;
+        font-size: 14px;
+    }
+}
+
+//排序列表
+#list{
+    overflow:hidden;
+}
+
+.list_device2{
+    width: 100%;
+    height:140px;
+
+    .swiper-slide{
+        width:100%;
+    }
+    .swiper-container {
+        height: 100%;
+    }
+    .swiper-scrollbar2 {
+
+        background: none;
+
+        position: absolute;
+
+        right: 3px;
+
+        top: 0;
+
+        height: 100%;
+
+        width: 5px;
+
+    }
+    .swiper-scrollbar2 .swiper-scrollbar-drag {
+
+        background: rgba(0, 0, 0, 0.3);
+
+    }
+}
+
+/*遮罩层*/
+.overlay {
+    display: none;
+}

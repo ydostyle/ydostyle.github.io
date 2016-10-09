@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>来钱儿移动站</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/idangerous.swiper.3dflow.css"/>
+    <script src="node_modules/zepto/dist/zepto.js"></script>
+    <script src="node_modules/zepto/src/fx.js"></script>
+    <script src="node_modules/zepto/src/event.js"></script>
+    <script src="node_modules/zepto/src/touch.js"></script>
+    <script src="js/idangerous.swiper2.7.6.min.js"></script>
+    <script src="js/idangerous.swiper.3dflow.js"></script>
+    <script src="js/sea.js"></script>
+    <script>
+        seajs.config({
+            'base': 'js',
+            'alias': {
+                'zepto': './node_modules/zepto/dist/zepto.js',
+                'swiper': 'swiper-3.3.1.jquery.min.js'
+            }
+        });
+        seajs.use("./js/index.js");
+    </script>
+</head>
+<body>
+<!--头部开始-->
+<header>
+    <div class="head-top-nav">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt=""/>
+        </div>
+        <div class="login_reg">
+            <a href="#" class='down-app'>下载客户端</a>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container" id="swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="javascript:;"><img src="./images/lb1.jpg" alt="lb1.jpg"/></a></div>
+            <div class="swiper-slide"><a href="javascript:;"><img src="./images/lb2.png" alt="lb2.png"/></a></div>
+            <div class="swiper-slide"><a href="javascript:;"><img src="./images/lb3.png" alt="lb3.png"/></a></div>
+        </div>
+        <div class="pagination" id="pagination1"></div>
+    </div>
+</header>
+<!--产品列表开始-->
+<div class="product-list">
+    <!--产品列表幻灯片-->
+    <div class="swiper-container" id="swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="product_list.html">
+                    <i class="wap-nav1"></i>
+                    <span>集合信托</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav2"></i>
+                    <span>集合资管</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav3"></i>
+                    <span>海外投资</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav4"></i>
+                    <span>债权基金</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav5"></i>
+                    <span>证劵基金</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav6"></i>
+                    <span>股权基金</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav7"></i>
+                    <span>创新基金</span>
+                </a>
+                <a href="product_list.html">
+                    <i class="wap-nav2"></i>
+                    <span>产品筛选</span>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="product_list.html">
+                    <i class="wap-nav8"></i>
+                    <span>我的客服</span>
+                </a>
+            </div>
+        </div>
+        <div class="pagination" id="pagination2"></div>
+    </div>
+    <!--产品列表幻灯片-->
+    <section class="product-msg">
+        <i></i>
+        <span class="msg">[来钱儿消息]</span>
+
+        <div id="msg-wrap">
+            <ul id="message-up">
+                <li><a href="javascript:;">来钱儿平台有何过人之处？</a></li>
+                <li><a href="javascript:;">来钱儿：忘记了登录密码，应该如何</a></li>
+                <li><a href="javascript:;">来钱儿：客户合同应该寄往哪个地址</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+<!--热销产品开始-->
+<div class="hot-product">
+    <h2 class="pro-tit">热销产品</h2>
+    <div class="hot-product-list">
+        <!--一个完整的hot item-->
+        <div class="hot-item">
+            <div class="hot-content">
+                <h3><i>重点推荐</i>中江信托-金鹤137号</h3>
+
+                <div class="pos_level"></div>
+                <div class="clearfix">
+                    <p class="info">
+                        <span>7%</span>
+                        <span>12个月</span>
+                        <span>工商企业类</span>
+                    </p>
+                    <div class="hot_info ">
+                        <p class="info_r">
+                            <a href="javascript:;" class="login"><span>登录可见</span></a>
+                            <a href="javascript:;" class="rate"><span>返佣比例</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="wap-ct-jdtf">
+                    <div class="wap-ct-jdt brbox"  style="width:25%">
+                        <span >25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-total">
+                <span class="collect" ><i class=""></i>0</span>
+                <span class="view" ><i></i>1498</span>
+            </div>
+        </div>
+        <!--一个完整的hot item End-->
+        <div class="hot-item">
+            <div class="hot-content">
+                <h3><i>重点推荐</i>LC证券-众诚7号</h3>
+
+                <div class="pos_level"></div>
+                <div class="clearfix">
+                    <p class="info">
+                        <span>7%</span>
+                        <span>12个月</span>
+                        <span>工商企业类</span>
+                    </p>
+                    <div class="hot_info ">
+                        <p class="info_r">
+                            <a href="javascript:;" class="login"><span>登录可见</span></a>
+                            <a href="javascript:;" class="rate"><span>返佣比例</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="wap-ct-jdtf">
+                    <div class="wap-ct-jdt brbox"  style="width:60%">
+                        <span >60%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-total">
+                <span class="collect" ><i class=""></i>100</span>
+                <span class="view" ><i></i>2228</span>
+            </div>
+        </div>
+        <div class="hot-item">
+            <div class="hot-content">
+                <h3><i>重点推荐</i>国盛证券-神鹰86号</h3>
+
+                <div class="pos_level"></div>
+                <div class="clearfix">
+                    <p class="info">
+                        <span>7.8%</span>
+                        <span>24个月</span>
+                        <span>基础设施类</span>
+                    </p>
+                    <div class="hot_info ">
+                        <p class="info_r">
+                            <a href="javascript:;" class="login"><span>登录可见</span></a>
+                            <a href="javascript:;" class="rate"><span>返佣比例</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="wap-ct-jdtf">
+                    <div class="wap-ct-jdt brbox"  style="width:75%">
+                        <span >75%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-total">
+                <span class="collect" ><i class=""></i>0</span>
+                <span class="view" ><i></i>1498</span>
+            </div>
+        </div>
+        <div class="hot-item">
+            <div class="hot-content">
+                <h3><i>重点推荐</i>GD信托-龙浩集团</h3>
+
+                <div class="pos_level"></div>
+                <div class="clearfix">
+                    <p class="info">
+                        <span>8%</span>
+                        <span>24个月</span>
+                        <span>工商企业类</span>
+                    </p>
+                    <div class="hot_info ">
+                        <p class="info_r">
+                            <a href="javascript:;" class="login"><span>登录可见</span></a>
+                            <a href="javascript:;" class="rate"><span>返佣比例</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="wap-ct-jdtf">
+                    <div class="wap-ct-jdt brbox"  style="width:30%">
+                        <span >30%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-total">
+                <span class="collect" ><i class=""></i>120</span>
+                <span class="view" ><i></i>888</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<footer>
+    <section class="wap-ft-frame">
+        <a href="#" class="active"><i class="icon_home"></i>首页</a><a href="product_list.bak"><i class="icon_list"></i>理财</a><a href="#"><i class="icon_my"></i>我的</a>
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+//公共方法，兼容各个浏览器
+.border_r(@len:10px){
+  -webkit-border-radius:@len;
+  -moz-border-radius:@len;
+  -o-border-radius:@len;
+  -ms-border-radius:@len;
+  border-radius:@len;
+}
+.opacity(@opacity:0.6){
+  @opacityPercentage: @opacity * 100;
+  filter:alpha(opacity=@opacityPercentage);
+  -moz-opacity:@opacity;
+  -khtml-opacity: @opacity;
+  opacity: @opacity;
+}
+.box_sizing(){
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
